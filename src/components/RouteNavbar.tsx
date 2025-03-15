@@ -36,7 +36,7 @@ const RouteNavbar: React.FC = () => {
             </motion.span>
           </NavLink>
           <NavLink
-            to="/about"
+            to="/skills"
             className={({ isActive }) =>
               isActive ? "border-b-white px-2" : "px-2"
             }
@@ -46,7 +46,7 @@ const RouteNavbar: React.FC = () => {
               whileTap={{ scale: 0.95 }} // Click scale effect
               transition={{ type: "spring", stiffness: 300 }}
             >
-              About
+              Skills
             </motion.span>
           </NavLink>
           <NavLink
@@ -115,7 +115,7 @@ const RouteNavbar: React.FC = () => {
             </motion.span>
           </NavLink>
           <NavLink
-            to="/about"
+            to="/skills"
             className={({ isActive }) =>
               isActive ? "block text-white py-2 px-4 border-b-white" : "block text-white py-2 px-4"
             }
@@ -126,7 +126,7 @@ const RouteNavbar: React.FC = () => {
               whileTap={{ scale: 0.95 }} // Click scale effect
               transition={{ type: "spring", stiffness: 300 }}
             >
-              About
+              Skills
             </motion.span>
           </NavLink>
           <NavLink
