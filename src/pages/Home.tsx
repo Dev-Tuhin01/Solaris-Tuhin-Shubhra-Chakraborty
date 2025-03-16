@@ -16,12 +16,26 @@ const Home: React.FC = () => {
         transition={{ duration: 1 }}
       >
         <motion.div
-          className="text-2xl text-[#957FB8] md:text-3xl"
+          className="text-2xl flex text-[#957FB8] w-full content-evenly md:text-3xl"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
-          Hi
+          Hello{"  "}
+          <motion.div
+            initial={{ rotate: 0 }}
+            animate={{
+              rotate: [0, 15,0], // Waving animation (rotate back and forth)
+            }}
+            transition={{
+              duration: 1,  // Set wave duration
+              repeat: Infinity, // Repeat indefinitely
+              ease: "easeInOut",  // Smooth ease effect
+            }}
+            className="px-1"
+          >
+            👋🏼
+          </motion.div>
         </motion.div>
 
         <motion.div
@@ -43,7 +57,7 @@ const Home: React.FC = () => {
         </motion.div>
 
         <motion.div
-          className="text-pretty pt-5 text-lg text-[#7E9CD8] md:text-xl"
+          className="text-pretty pt-5 text-sm text-[#7E9CD8] md:text-xl"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}

@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
           whileTap={{ scale: 0.95 }} // Scale down on click
           initial={{ opacity: 0, x: -50 }} // Initial position and opacity
           animate={{ opacity: 1, x: 0 }} // Animate to full opacity and x=0
-          transition={{ duration: 0.8, delay: 0.4, type: "spring", stiffness: 300 }} // Combined transition properties
+          transition={{ duration: 0.4, delay: 0.1, type: "spring", stiffness: 300 }} // Combined transition properties
         >
           <Email className="mr-2" /> Email
         </motion.a>
@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
           whileTap={{ scale: 0.95 }} // Scale down on click
           initial={{ opacity: 0, x: 50 }} // Initial position and opacity
           animate={{ opacity: 1, x: 0 }} // Animate to full opacity and x=0
-          transition={{ duration: 0.8, delay: 0.6, type: "spring", stiffness: 300 }} // Combined transition properties
+          transition={{ duration: 0.4, delay: 0.1, type: "spring", stiffness: 300 }} // Combined transition properties
         >
           <Telegram className="mr-2" /> Telegram
         </motion.a>
