@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects:React.FC = () =>{
   return (
-  <h1>Projects</h1>
+  <div className="h-screen bg-[#363646]">Projects</div>
   )
 }
 
